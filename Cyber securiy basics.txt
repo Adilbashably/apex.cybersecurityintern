@@ -1,0 +1,43 @@
+1. The CIA Triad: What Are We Actually Trying to Protect?
+
+At its core, all of security boils down to three simple goals:
+
+1. Confidentiality: “Keep my secrets secret.”
+
+2. Integrity: “Don’t tamper with my stuff.”
+
+3. Availability: “Keep the lights on.”
+
+Let’s discuss each of the three elements in detail.
+
+1. Confidentiality refers to the ability of a program or data to be accessed only by authorized personnel. In other words, if my medical or banking records are visible to someone who is not entitled to see them, confidentiality is compromised. How do we achieve confidentiality? Well, we can use something as simple as a password, or a more sophisticated combination of a user authentication (such as MFA) and encryption to scramble the data so that it appears as gibberish to anyone who is not entitled to see it.
+
+2. Integrity refers to preventing unauthorized changes to data or a program. In other words, if you are sending me an email with the amount of $10 to a friend and the bank system changes it to $1,000, or if someone tampers with the code of my favorite software to rob me of my life savings, that is a violation of integrity. How do we protect against it? Well, we can use something as simple as a digital signature or a hash that would become immediately obvious if any part of the data is changed.
+
+3. Availability refers to ensuring that the data or program is accessible when needed. In other words, if my online bank account is unavailable when I need it to pay my rent, that is a problem regardless of whether my data is encrypted or not. How do we ensure availability? We can use a combination of various methods, such as having backups, a reliable internet connection, and a powerful enough system to handle a traffic spike that could occur at any time.
+
+2. Threat Types: The Hacker’s Weapons
+
+There are several different types of attacks that hackers could use to compromise any of the three elements of the CIA triad.
+
+1. Phishing: This is a social engineering technique that involves tricking the target into following a malicious link or providing their private information. The attacker could pose as a company’s customer support and send the target a phishing link, which would compromise the target’s data confidentiality.
+
+2. Malware: Malicious software designed to infiltrate a system and cause damage. There are various types of malware, including viruses, worms, and Trojans. The main objective of malware can range from stealing data to disrupting the normal operation of the system. It can be delivered through phishing emails or websites.
+
+3. Ransomware: A type of malware that encrypts the data on the targeted system with a complex key. The objective of ransomware is to hold the data hostage until the attacker demands a ransom, which, once paid, would give the attacker access to the key and the data. This compromises both the availability of the data and its confidentiality, as ransomware could threaten to leak the data if the ransom is not paid.
+
+4. DDoS: A distributed denial of service attack involves overwhelming the target server with traffic from multiple systems, making it inaccessible to users. It is a way to disrupt the services provided by the target server by making it unavailable, which compromises the data’s availability.
+
+5. SQL Injection: An SQL injection occurs when an attacker tricks the target into clicking a link or typing malicious code into a form field. The objective of an SQL injection is to exploit poorly written code in a database and gain unauthorized access to it. For example, a username field could be used to type in an additional database command, which would allow the attacker to view all the usernames and passwords in the database.
+
+6. Brute Force: This type of attack uses automated software to guess the target’s password by trying every possible combination until the correct one is found. The objective of the brute force attack is to gain unauthorized access to the target’s account by bypassing the confidentiality measures.
+
+3. Attack Vectors: How They Get Footing in the Door
+
+An attack vector is a method by which the attacker could deliver the attack.
+
+1. Social Engineering: This type of attack relies on manipulating the target into disclosing their private information or taking a specific action that would compromise their data. Social engineering takes advantage of human psychology, such as the fear of authorities, to get the target to, for example, let the attacker into a restricted facility. A social engineer could pose as an IT specialist and trick the target into giving them the password to their account over the phone.
+
+2. Wireless Network: An attacker could use a wireless network to gain unauthorized access to the target’s system. For example, the attacker could set up a malicious Wi-Fi network that would trick the target into connecting to it and allow the attacker to access the target’s personal information by intercepting the Wi-Fi traffic.
+
+3. Insider Threats: An insider threat refers to any security risk that comes from within the organization. This could be a disgruntled employee who intentionally leaks the sensitive information to a competitor or a careless employee who accidentally leaves the database exposed to the public.
