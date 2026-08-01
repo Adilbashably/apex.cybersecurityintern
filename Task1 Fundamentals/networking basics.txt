@@ -1,0 +1,109 @@
+1. The OSI Model has 7 layers. It is a framework that standardizes how data moves across a network.
+
+The OSI Model has these layers:
+
+* Application
+
+* Presentation
+
+* Session
+
+* Transport
+
+* Network
+
+* Data Link
+
+* Physical
+
+Each layer has its functions and protocols. For example the Application layer has protocols like HTTP and DNS.
+
+The 7 layers of the OSI Model are:
+
+* Application: this is where the end-user processes and network services happen
+
+* Presentation: this is where the data is formatted and encrypted
+
+* Session: this is where the connections are established and managed
+
+* Transport: this is where the data is delivered from one end to the
+
+* Network: this is where the routing of packets happens
+
+* Data Link: this is where the physical addressing and framing happen
+
+* Physical: this is where the raw binary bits are transmitted
+
+2. The TCP/IP Protocol Suite is the protocol used by the internet. It is a 4-layer model that compresses the OSI Model.
+
+The 4 layers of the TCP/IP Model are:
+
+* Application: this includes the Application, Presentation and Session layers of the OSI Model
+
+* Transport: this is the same as the Transport layer of the OSI Model
+
+* Internet: this is the same as the Network layer of the OSI Model
+
+* Network Access: this includes the Data Link and Physical layers of the OSI Model
+
+When data moves down the stack each layer adds its header to the payload.
+
+This is how it works:
+
+* The Application layer adds the payload like an HTTP GET request
+
+* The Transport layer adds the source and destination ports and sequence numbers
+
+* The Internet layer adds the source and destination IP addresses
+
+* The Network Access layer adds the source and destination MAC addresses and the Frame Check Sequence
+
+* The Physical layer converts the frames into optical signals
+
+3. Lets take a look at DNS and HTTP/HTTPS.
+
+The Domain Name System (DNS) translates domain names into IP addresses.
+
+For example when you type in example.com the DNS translates it into an IP address like 93.184.216.34.
+
+This is how it works:
+
+* The browser or operating system checks its cache for a recent mapping
+
+* If it does not find one it sends the query to a resolver like the one provided by the internet service provider
+
+* The recursive resolver sends the query to the root name server, which points it to the Top-Level Domain (TLD) server
+
+* The TLD server points to the name server, which returns the final IP address
+
+HTTP and HTTPS are protocols used for communication between the client and server.
+
+HTTP is plaintext and vulnerable to eavesdropping and tampering.
+
+HTTPS is HTTP layered over TLS, which encrypts the traffic and authenticates the server identity.
+
+There are versions of HTTP like HTTP/1.1, HTTP/2 and HTTP/3.
+
+Each version has its improvements, like persistent TCP connections, multiplexing and header compression.
+
+4. IP Addressing Subnetting and NAT are concepts in networking.
+
+An IPv4 address consists of 32 bits expressed as 4 octets in form.
+
+A Subnet Mask separates the address into two parts: the Network ID and the Host ID.
+
+For example if you are assigned the network 192.168.1.0/26 you can calculate the Subnet Mask and the total number of addresses.
+
+The Subnet Mask would be 255.255.255.192. The total number of addresses would be 64.
+
+The usable host addresses would be 62 subtracting the Network ID and the Broadcast Address.
+
+Network Address Translation (NAT) maps private IPv4 addresses to an IP address.
+
+This is done to conserve limited IPv4 space and provide security.
+
+The common implementation is Port Address Translation (PAT) or NAT Overload.
+
+For example a private laptop with the IP address 192.168.1.50 can be translated to an IP address like 203.0.113.10.
+
+The NAT router keeps a state table to keep track of the translations and forwards the payload back, to the laptop.
